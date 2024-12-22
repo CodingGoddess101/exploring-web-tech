@@ -1,0 +1,297 @@
+body {
+  background-color: #666;
+  margin: 0px;
+  padding: 0px;
+}
+
+*::-moz-selection {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+*::selection {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.app.content {
+  display: block;
+}
+.app.content .header.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto 10px;
+  justify-content: center;
+}
+.app.content .creative.dynamic.image.slider {
+  display: block;
+  margin: 0px auto;
+  width: 1000px;
+}
+.app.content .creative.dynamic.image.slider .solo-image-slider,
+.app.content .creative.dynamic.image.slider .multi-image-slider {
+  display: block;
+  margin: 0px auto 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+}
+.app.content .creative.dynamic.image.slider .slider-one {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: auto auto;
+  width: 750px;
+}
+.app.content .creative.dynamic.image.slider .slider-one .prev-image,
+.app.content .creative.dynamic.image.slider .slider-one .next-image {
+  display: block;
+  margin: auto 20px;
+  cursor: pointer;
+  background-color: grey;
+  padding: 10px 15px;
+  border-radius: 50%;
+  color: white;
+}
+.app.content .creative.dynamic.image.slider .slider-one img {
+  display: block;
+  border-radius: 10px;
+  width: 250px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app.content .creative.dynamic.image.slider .slider-two {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0px auto 60px;
+  max-width: 700px;
+}
+.app.content .creative.dynamic.image.slider .slider-two .image-selection {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.app.content .creative.dynamic.image.slider .slider-two .image-selection .potential-selected-image {
+  display: inline;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.8s ease;
+}
+.app.content .creative.dynamic.image.slider .slider-two .image-selection .one {
+  transform: translateX(0) scale(0.7);
+  z-index: 1;
+  transition: animate1 0.4s ease-in-out;
+  filter: blur(2px);
+}
+.app.content .creative.dynamic.image.slider .slider-two .image-selection .two {
+  transform: translateX(0);
+  z-index: 1;
+  transition: animate2 0.4s ease-in-out;
+}
+.app.content .creative.dynamic.image.slider .slider-two .image-selection .three {
+  transform: translateX(0px) scale(0.7);
+  z-index: 1;
+  transition: animate3 0.4s ease-in-out;
+  filter: blur(2px) grayscale(100%);
+}
+.app.content .creative.dynamic.image.slider .slider-two .movement-controls {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.app.content .creative.dynamic.image.slider .slider-two .prev-image,
+.app.content .creative.dynamic.image.slider .slider-two .next-image {
+  display: block;
+  margin: auto 20px;
+  cursor: pointer;
+  background-color: #808080;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 50%;
+}
+.app.content .creative.dynamic.image.slider .slider-two img {
+  display: block;
+  border-radius: 10px;
+  width: 250px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app.content .creative.dynamic.image.slider:nth-child(3) {
+  margin-top: 100px;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) {
+  display: block;
+  margin-top: 50px;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0px auto 60px;
+  max-width: 700px;
+  height: 200px;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection .potential-selection {
+  position: absolute;
+  transition: transform 0.8s ease, z-index 0.8s ease, filter 0.8s ease;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection .potential-selection img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection .left {
+  filter: grayscale(100%);
+  transform: translateX(-200px) scale(0.65);
+  z-index: 1;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection .middle {
+  filter: grayscale(0%);
+  transform: translateX(0px) scale(1);
+  z-index: 2;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .image-selection .right {
+  filter: grayscale(100%);
+  transform: translateX(200px) scale(0.65);
+  z-index: 1;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .movement-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .prev-image,
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three .next-image {
+  display: block;
+  margin: 40px 20px 0px;
+  cursor: pointer;
+  background-color: #808080;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 50%;
+}
+.app.content .creative.dynamic.image.slider:nth-child(4) .slider-three img {
+  display: block;
+  border-radius: 10px;
+  width: 250px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) {
+  display: block;
+  margin-top: 50px;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0px auto 60px;
+  max-width: 700px;
+  height: 240px;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .potential-selection {
+  position: absolute;
+  transition: transform 0.8s ease, z-index 0.8s ease, filter 0.8s ease;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .potential-selection img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .first {
+  filter: grayscale(100%);
+  transform: translateX(-500px) translateY(100px) scale(0.65);
+  z-index: 1;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .second {
+  filter: grayscale(40%);
+  transform: translateX(-310px) translateY(50px) scale(0.85);
+  z-index: 2;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .third {
+  filter: grayscale(0%) invert(100%);
+  transform: translateX(-100px) scale(1);
+  z-index: 3;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .fourth {
+  filter: grayscale(0%);
+  transform: translateX(120px) scale(1);
+  z-index: 3;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .fifth {
+  filter: grayscale(40%);
+  transform: translateX(330px) translateY(50px) scale(0.85);
+  z-index: 2;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .image-selection .sixth {
+  filter: grayscale(100%);
+  transform: translateX(500px) translateY(100px) scale(0.65);
+  z-index: 1;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .movement-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: center;
+  align-content: center;
+  margin: 10px auto;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .prev-image,
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four .next-image {
+  display: block;
+  margin: 40px 20px 0px;
+  cursor: pointer;
+  background-color: #808080;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 50%;
+}
+.app.content .creative.dynamic.image.slider:nth-child(5) .slider-four img {
+  display: block;
+  border-radius: 10px;
+  width: 250px;
+  width: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=App3.css.map */

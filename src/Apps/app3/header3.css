@@ -1,0 +1,26 @@
+.header-three {
+    position: fixed;
+    display: block;
+    top: 0;
+    margin: 0px auto 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: #000;
+    z-index: 5;
+
+}
+
+.header-three .link.side,
+.header-three .link.middle {
+    display: inline;
+    color: white;
+    margin: 5px 0px;
+    padding: 0px 5px;
+}
+
+.header-three .link.side a,
+.header-three .link.middle a {
+    color: #eee;
+    margin: 0px 5px;
+}

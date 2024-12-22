@@ -1,0 +1,99 @@
+body {
+    background-color: #555;
+    margin: 0px auto;
+    font-family: calibri;
+}
+
+.header-one {
+    background-color: #444;
+    position: fixed;
+    display: block;
+    top: 0;
+    margin: 0px auto 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+
+}
+
+.header-one .side.bar,
+.header-one .middle.bar {
+    display: block;
+    color: white;
+    padding: 0px 5px;
+}
+
+.header-one .side.bar a,
+.header-one .middle.bar a {
+    color: #eee;
+    margin: 0px 5px;
+}
+
+.heading-one {
+    margin: 10px auto;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    font-size: 24pt;
+}
+
+/* app 1 main displayed content */
+.app-one-content {
+    display: block;
+    width: 900px;
+    margin: 0px auto;
+}
+
+.app-one-content .app-one-heading-two {
+    color: #eee;
+    text-align: center;
+    width: fit-content;
+    display: block;
+    margin: 0px auto;
+    font-size: 2em;
+}
+
+.app-one-content .box-size-container {
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+}
+
+.menu {
+    float: left;
+    left: 25%;
+    width: 180px;
+    margin: 20px auto 10px;
+    padding: 0px 10px;
+}
+
+.list-item {
+    border-bottom: 2px solid #eee;
+    color: #eee;
+    display: block;
+    margin: 0px auto 0px;
+    padding: 2px 0px 4px 10px;
+    width: 150px;
+    transition: background-color .1s ease-in-out;
+    cursor: pointer;
+}
+
+.list-item:hover {
+    background-color: #555;
+}
+
+.menu-data {
+    display: block;
+    float: right;
+    width: 75%;
+    padding: 0px 10px;
+    border-left: 2px solid #eee;
+}
+
+.menu-data-heading {
+    display: block;
+    width: fit-content;
+    color: #999;
+    padding: 0px;
+    margin: 20px auto 10px;
+
+}
