@@ -1,0 +1,29 @@
+.header-deff {
+    background-color: #144;
+    position: fixed;
+    display: block;
+    top: 0;
+    margin: 0px auto 0px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+
+.header-deff .side.bar,
+.header-deff .middle.bar {
+    display: block;
+    color: white;
+    padding: 0px 5px;
+}
+
+.header-deff .side.bar a,
+.header-deff .middle.bar a {
+    color: #eee;
+    margin: 0px 5px;
+}
+
+.home-page.content {
+    display: block;
+    margin: 60px auto;
+}
